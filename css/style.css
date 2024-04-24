@@ -498,14 +498,13 @@ body {
             }
 
             aside {
-                width: 300px;
+                width: 100%;
 
                 .upper-aside {
                     padding: 16px;
                     margin-bottom: 8px;
                     background-color: #fff;
                     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.128);
-                    width: 300px;
                     border-radius: 8px;
 
                     .language-eng {
@@ -572,7 +571,6 @@ body {
 
                 .lower-aside {
                     background-color: #fff;
-                    width: 300px;
                     border-radius: 8px;
                     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.128);
 
