@@ -1,18 +1,13 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
     .content-container {
         display: flex;
         flex-direction: column;
     }
+}
 
-    aside {
-        width: 100%;
-
-        /* .upper-aside {
-            width: 100%;
-        }
-
-        .lower-aside {
-            width: 100%;
-        } */
+@media screen and (max-width: 500px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
     }
 }
