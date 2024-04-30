@@ -1,10 +1,16 @@
 import { getUserLocation } from "./getLocation.js";
+import { startRecording, stopRecording } from "./getAudio.js";
 
 const imageInput = document.getElementById("edit-bg-icon");
 const imageInput2 = document.getElementById("edit-bg-icon2");
 const imageInput3 = document.getElementById("edit-bg-icon3");
 const imagePreview = document.getElementById('preview');
 const imagePreview2 = document.getElementById('preview2');
+const startRecordingBtn = document.getElementById("startRecording");
+const stopRecordingBtn = document.getElementById("stopRecording");
+const audioContainer = document.getElementById('audioContainer');
+const recordContainer = document.getElementById('recordContainer');
+const deleteRecordingBtn = document.getElementById("deleteRecording");
 
 imageInput.style.display = "none";
 imageInput2.style.display = "none";
@@ -39,3 +45,41 @@ imageInput2.addEventListener('change', function () {
 document.getElementById("address").addEventListener("click", () => {
     getUserLocation();
 });
+
+startRecordingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    recordContainer.innerHTML = `Recording...`;
+    startRecording();
+})
+
+stopRecordingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    recordContainer.style.display = "none";
+    deleteRecordingBtn.style.display = "inline-block";
+    stopRecording();
+})
+
+deleteRecordingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    localStorage.removeItem('audio');
+    audioContainer.innerHTML = '';
+})
+
+const bars = document.getElementById('icon');
+const sidebar = document.getElementById('sidebar');
+
+let visible = true;
+
+bars.addEventListener('click', () => {
+    if (visible == true) {
+        bars.innerHTML = `☰`;
+        visible = false;
+        sidebar.style.left = '0px';
+
+    } else {
+        bars.innerHTML = `✖`;
+        visible = true;
+        sidebar.style.left = '-250px';
+    }
+})

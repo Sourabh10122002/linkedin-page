@@ -1,7 +1,49 @@
+@media screen and (max-width:1126px) {
+
+    body {
+        & header {
+            & #id {
+                justify-content: space-between;
+
+                #nav-p2 {
+                    display: none;
+
+                }
+
+                .icon {
+                    margin-left: 12px;
+                    display: block;
+                }
+            }
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0px;
+            left: -250px;
+            width: 250px;
+            display: block;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            background-color: #fff;
+            transition: left 0.3s ease;
+            z-index: 3;
+        }
+    }
+}
+
+
 @media screen and (max-width: 780px) {
+
     .content-container {
         display: flex;
         flex-direction: column;
+
+        .line {
+            max-width: 300px;
+        }
     }
 }
 

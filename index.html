@@ -13,7 +13,7 @@
     <title>Clone Lelo</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <div id="id">
             <div id="nav-p1">
@@ -41,11 +41,12 @@
                         <h5>Notifications</h5>
                     </div>
                     <div id="me" class="feed-div">
-                        <i class="fa-solid fa-circle"></i>
+                        <img src="https://source.unsplash.com/random/profile">
                         <h5>Me<i class="fa-solid fa-sort-down"></i></h5>
                     </div>
                 </div>
-                <div id="feed-container-p2"><i class="fa-solid fa-bars-staggered"></i>
+                <div id="feed-container-p2">
+                    <i class="fa-solid fa-bars-staggered"></i>
                     <h5>For Business<i class="fa-solid fa-sort-down"></i></h5>
                     </h5>
                 </div>
@@ -53,8 +54,31 @@
                     <h5>Unlock<i class="ri-money-rupee-circle-line"></i>1,000 in<br>for free job credits</h5>
                 </div>
             </div>
+            <span class="icon" id="icon">☰
+            </span>
         </div>
     </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="profile-ji-pic"><img src="https://source.unsplash.com/random/profile">
+            <h2>Sourabh Rawat <i class="fa-brands fa-linkedin" style="color: #c37d16;"></i></h2>
+            <p>View Profile</p>
+        </div>
+        <div class="view-impressions">
+            <div class="viewers">
+                <h4>58</h4>
+                <p>profile viewers</p>
+            </div>
+            <div class="impressions">
+                <h4>188</h4>
+                <p>post impressions</p>
+            </div>
+        </div>
+        <div class="group-event">
+            <h2>Groups</h2>
+            <h2>Events</h2>
+        </div>
+    </div>
 
     <div class="container">
         <div class="content-container">
@@ -142,6 +166,14 @@
                             <button><i class="fa-solid fa-star"></i>Write with AI</button>
                         </div>
                     </div>
+                    <div class="record">
+                        <h2>Record your voice</h2>
+                        <button id="startRecording">Start Recording</button>
+                        <button id="stopRecording">Stop Recording</button>
+                        <button id="deleteRecording">Delete Recording</button>
+                        <div id="audioContainer"></div>
+                        <div id="recordContainer"></div>
+                    </div>
                 </div>
             </section>
             <aside>
@@ -199,6 +231,19 @@
                             <div class="profile-info">
                                 <h3>Tanya Saxena</h3>
                                 <span>∙ 3rd</span>
+                                <p>MCA Student | web developer | Java developer | HTML | CSS |...</p>
+                                <div class="user-connect">
+                                    <button><i class="fa-solid fa-plus"></i>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont-pro">
+                            <div class="profile-small">
+                                <img src="https://source.unsplash.com/random/fruits">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Asha Kumari</h3>
+                                <span>∙ 2nd</span>
                                 <p>MCA Student | web developer | Java developer | HTML | CSS |...</p>
                                 <div class="user-connect">
                                     <button><i class="fa-solid fa-plus"></i>Follow</button>
