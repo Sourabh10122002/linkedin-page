@@ -73,12 +73,12 @@ let visible = true;
 
 bars.addEventListener('click', () => {
     if (visible == true) {
-        bars.innerHTML = `☰`;
+        bars.innerHTML = `✖`;
         visible = false;
         sidebar.style.left = '0px';
 
     } else {
-        bars.innerHTML = `✖`;
+        bars.innerHTML = `☰`;
         visible = true;
         sidebar.style.left = '-250px';
     }
